@@ -364,6 +364,29 @@ To create/edit your name's website use the [web-based name storage editor](http:
 
 Note that the fee charged depends on how much data you store (i.e. the size of your website). Make sure you have enough balance!
 
+## Inject values into your website
+
+Qora websites support injection of any value from the name storage.
+
+1. Create a new value in the [web-based name storage editor](http://127.0.0.1:9090/index/namestorage.html). Enter anything as "key" except "website".
+![Create injection value](images/screenshots/injection_value_creation.png)
+2. Add the &lt;inj&gt; tag to your website. Place it where you want the injected value to appear. The complete syntax is shown below.
+
+```html
+<inj key="[key]">[name]</inj>
+```
+> where [name] is a registered Qora name and [key] is any key inside that names storage.
+
+![Create website](images/screenshots/injection_website_creation.png)
+
+Please note that injections are just performed directly on a website. &lt;inj&gt; inside injected values are not further processed.
+
+<aside class="warning">
+Injected values are inserted into the website "as is". Although it's completely possible to inject values from any arbitrary Qora name, it is not advisable to inject anything from untrusted sources due to the possibility of <a href="https://en.wikipedia.org/wiki/Xss" target="_blank">Cross-site scripting</a>.
+</aside>
+
+
+
 # Tools
 
 Here you can find a list of tools
