@@ -385,6 +385,12 @@ Please note that injections are just performed directly on a website. &lt;inj&gt
 Injected values are inserted into the website "as is". Although it's completely possible to inject values from any arbitrary Qora name, it is not advisable to inject anything from untrusted sources due to the possibility of <a href="https://en.wikipedia.org/wiki/Xss" target="_blank">Cross-site scripting</a>.
 </aside>
 
+## Create a blog
+
+Blogs can be created by activating the blog feature on the [settings page](http://127.0.0.1:9090/index/settings.html).
+![Blog settings](images/screenshots/settings_blog.png)
+
+Your blog can then be reached through the [blog directory](http://127.0.0.1:9090/index/blogdirectory.html), as soon as the change has been submitted and added to the next [block](https://en.bitcoin.it/wiki/Blocks).
 
 
 # Tools
